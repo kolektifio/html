@@ -435,6 +435,8 @@ class FormBuilder
             $value = $value->format('Y-m-d');
         }
 
+        $options['max'] = '9999-12-31';
+
         return $this->input('date', $name, $value, $options);
     }
 
